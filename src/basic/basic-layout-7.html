@@ -6,7 +6,21 @@
     <title>Basic Layout 7</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
-      /* Doe hier jouw ding! */
+      #basic-layout-7 {
+        grid-template: 15% 1fr 5% / 30% 1fr;
+      }
+      header {
+        grid-area: 1 / 2 / 2 / 3;
+      }
+      nav {
+        grid-area: 1 / 1/ 4 / 2;
+      }
+      main {
+        grid-area: 2 / 2 / 3 / 3;
+      }
+      footer {
+        grid-area: 3 / 2 / 4 / 3;
+      }
     </style>
   </head>
   <body id="basic-layout-7">
