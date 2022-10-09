@@ -3,6 +3,7 @@
 }
 :root {
   font-size: min(calc(1em + 1vw), 4em);
+  --default-spacing: .5em;
 }
 body {
   min-height: 100vh;
@@ -11,19 +12,31 @@ body {
 body > * {
   min-height: 1em;
 }
+
+body[id^="basic-layout-"] {
+  display: grid;
+  gap: var(--default-spacing);
+  margin: 0;
+  padding: var(--default-spacing);
+}
+
 header {
   background: cyan;
+  grid-area: header;
 }
 header > h1 {
   margin: 0;
 }
 nav {
   background: magenta;
+  grid-area: nav;
 }
 main {
   background: yellow;
+  grid-area: main;
 }
 footer {
   background: black;
   color: white;
+  grid-area: footer;
 }
